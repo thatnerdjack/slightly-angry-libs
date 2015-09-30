@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C142859D1BBC427E00F7A52F /* SALCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142859C1BBC427E00F7A52F /* SALCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C15DDC3A1BB9ABD600390BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DDC391BB9ABD600390BF7 /* AppDelegate.swift */; };
-		C15DDC3C1BB9ABD600390BF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DDC3B1BB9ABD600390BF7 /* ViewController.swift */; };
 		C15DDC3F1BB9ABD600390BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15DDC3D1BB9ABD600390BF7 /* Main.storyboard */; };
 		C15DDC411BB9ABD600390BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15DDC401BB9ABD600390BF7 /* Assets.xcassets */; };
 		C15DDC441BB9ABD600390BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15DDC421BB9ABD600390BF7 /* LaunchScreen.storyboard */; };
@@ -34,9 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C142859C1BBC427E00F7A52F /* SALCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SALCollectionViewController.swift; sourceTree = "<group>"; };
 		C15DDC361BB9ABD600390BF7 /* Slightly Annoyed Libs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slightly Annoyed Libs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15DDC391BB9ABD600390BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C15DDC3B1BB9ABD600390BF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C15DDC3E1BB9ABD600390BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C15DDC401BB9ABD600390BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15DDC431BB9ABD600390BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				C15DDC391BB9ABD600390BF7 /* AppDelegate.swift */,
-				C15DDC3B1BB9ABD600390BF7 /* ViewController.swift */,
 				C15DDC3D1BB9ABD600390BF7 /* Main.storyboard */,
+				C142859C1BBC427E00F7A52F /* SALCollectionViewController.swift */,
 				C15DDC401BB9ABD600390BF7 /* Assets.xcassets */,
 				C15DDC421BB9ABD600390BF7 /* LaunchScreen.storyboard */,
 				C15DDC451BB9ABD600390BF7 /* Info.plist */,
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15DDC3C1BB9ABD600390BF7 /* ViewController.swift in Sources */,
 				C15DDC3A1BB9ABD600390BF7 /* AppDelegate.swift in Sources */,
+				C142859D1BBC427E00F7A52F /* SALCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +488,7 @@
 				C15DDC601BB9ABD600390BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C15DDC611BB9ABD600390BF7 /* Build configuration list for PBXNativeTarget "Slightly Annoyed LibsTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				C15DDC631BB9ABD600390BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C15DDC641BB9ABD600390BF7 /* Build configuration list for PBXNativeTarget "Slightly Annoyed LibsUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				C15DDC661BB9ABD600390BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
