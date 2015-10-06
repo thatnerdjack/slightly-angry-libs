@@ -10,9 +10,18 @@ import UIKit
 
 private let REUSE_IDENT = "textInputField"
 private let SECTION_INSERTS = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
-private var textBoxes = [UITextField]()
+private var textBoxes = [TextBoxCell]()
 
 class SALCollectionViewController: UICollectionViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("view did load")
+    }
+    
+    func setupCells() {
+        
+    }
     
 }
 
@@ -33,6 +42,11 @@ extension SALCollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(REUSE_IDENT, forIndexPath: indexPath)
         cell.backgroundColor = UIColor.blackColor()
         // Configure the cell
+        textBoxes.append(cell as! TextBoxCell)
+        if(textBoxes.count >= 10) {
+            setupCells()
+        }
+        print("cell made")
         return cell
     }
 }
@@ -40,11 +54,13 @@ extension SALCollectionViewController {
 extension SALCollectionViewController : UICollectionViewDelegateFlowLayout {
     //1
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        print("cell size")
         return CGSize(width: 100, height: 100)
     }
     
     //3
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        print("cell padding")
         return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
     }
 }

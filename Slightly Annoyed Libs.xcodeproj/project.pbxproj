@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C13290F41BC2F7C900413E4B /* TextBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13290F31BC2F7C900413E4B /* TextBoxCell.swift */; settings = {ASSET_TAGS = (); }; };
 		C142859D1BBC427E00F7A52F /* SALCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142859C1BBC427E00F7A52F /* SALCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C15DDC3A1BB9ABD600390BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DDC391BB9ABD600390BF7 /* AppDelegate.swift */; };
 		C15DDC3F1BB9ABD600390BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15DDC3D1BB9ABD600390BF7 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C13290F31BC2F7C900413E4B /* TextBoxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBoxCell.swift; sourceTree = "<group>"; };
 		C142859C1BBC427E00F7A52F /* SALCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SALCollectionViewController.swift; sourceTree = "<group>"; };
 		C15DDC361BB9ABD600390BF7 /* Slightly Annoyed Libs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slightly Annoyed Libs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15DDC391BB9ABD600390BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				C15DDC391BB9ABD600390BF7 /* AppDelegate.swift */,
 				C15DDC3D1BB9ABD600390BF7 /* Main.storyboard */,
+				C13290F31BC2F7C900413E4B /* TextBoxCell.swift */,
 				C142859C1BBC427E00F7A52F /* SALCollectionViewController.swift */,
 				C15DDC401BB9ABD600390BF7 /* Assets.xcassets */,
 				C15DDC421BB9ABD600390BF7 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13290F41BC2F7C900413E4B /* TextBoxCell.swift in Sources */,
 				C15DDC3A1BB9ABD600390BF7 /* AppDelegate.swift in Sources */,
 				C142859D1BBC427E00F7A52F /* SALCollectionViewController.swift in Sources */,
 			);
