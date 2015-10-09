@@ -15,6 +15,7 @@
 		C15DDC441BB9ABD600390BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15DDC421BB9ABD600390BF7 /* LaunchScreen.storyboard */; };
 		C15DDC4F1BB9ABD600390BF7 /* Slightly_Annoyed_LibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DDC4E1BB9ABD600390BF7 /* Slightly_Annoyed_LibsTests.swift */; };
 		C15DDC5A1BB9ABD600390BF7 /* Slightly_Annoyed_LibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DDC591BB9ABD600390BF7 /* Slightly_Annoyed_LibsUITests.swift */; };
+		C1812C3A1BC82D5D002043FF /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1812C391BC82D5D002043FF /* Story.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C15DDC551BB9ABD600390BF7 /* Slightly Annoyed LibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slightly Annoyed LibsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15DDC591BB9ABD600390BF7 /* Slightly_Annoyed_LibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slightly_Annoyed_LibsUITests.swift; sourceTree = "<group>"; };
 		C15DDC5B1BB9ABD600390BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1812C391BC82D5D002043FF /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = ../Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		C15DDC381BB9ABD600390BF7 /* Slightly Annoyed Libs */ = {
 			isa = PBXGroup;
 			children = (
+				C1812C391BC82D5D002043FF /* Story.swift */,
 				C15DDC391BB9ABD600390BF7 /* AppDelegate.swift */,
 				C15DDC3D1BB9ABD600390BF7 /* Main.storyboard */,
 				C13290F31BC2F7C900413E4B /* TextBoxCell.swift */,
@@ -262,6 +265,7 @@
 				C13290F41BC2F7C900413E4B /* TextBoxCell.swift in Sources */,
 				C15DDC3A1BB9ABD600390BF7 /* AppDelegate.swift in Sources */,
 				C142859D1BBC427E00F7A52F /* SALCollectionViewController.swift in Sources */,
+				C1812C3A1BC82D5D002043FF /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,5 +10,5 @@ import UIKit
 
 class TextBoxCell: UICollectionViewCell {
     @IBOutlet weak var textField: UITextField!
-    
+    var descriptor: String //hold off until complete story class
 }

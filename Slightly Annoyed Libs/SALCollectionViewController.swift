@@ -20,7 +20,9 @@ class SALCollectionViewController: UICollectionViewController {
     }
     
     func setupCells() {
-        
+        var testCell = textBoxes[0]
+        testCell.textField.text = "test"
+        print("setup")
     }
     
 }
