@@ -9,4 +9,20 @@
 class Story {
     var storyFriendlyName: String = ""
     var wordTypes = [String]()
+    var wordInputs = [String]()
+    var story: String = ""
+    
+    init(storyFriendlyName: String, wordTypes: [String], wordInputs: [String], story: String) {
+        self.storyFriendlyName = storyFriendlyName
+        self.wordTypes = wordTypes
+        self.wordInputs = wordInputs
+        self.story = story
+    }
+}
+
+class RoodyStory: Story {
+    
+    init() {
+        //START HERE
+    }
 }
