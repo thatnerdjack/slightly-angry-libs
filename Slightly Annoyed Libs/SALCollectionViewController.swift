@@ -11,6 +11,7 @@ import UIKit
 private let REUSE_IDENT = "textInputField"
 private let SECTION_INSERTS = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 private var textBoxes = [TextBoxCell]()
+var currentStory = RoodyStory()
 
 class SALCollectionViewController: UICollectionViewController {
     
@@ -20,11 +21,19 @@ class SALCollectionViewController: UICollectionViewController {
     }
     
     func setupCells() {
-        var testCell = textBoxes[0]
-        testCell.textField.text = "test"
-        print("setup")
+        for var i = 0; i < currentStory.wordTypes.count; i++ {
+            let CELL = textBoxes[i]
+            CELL.textField.text = currentStory.wordTypes[i]
+        }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "inputToStory") {
+            let DVC = segue.destinationViewController as! StoryViewController
+            DVC.currentStory = currentStory
+            DVC.textBoxes = textBoxes
+        }
+    }
 }
 
 extension SALCollectionViewController {
@@ -36,7 +45,7 @@ extension SALCollectionViewController {
     
     //2
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return currentStory.wordTypes.count
     }
     
     //3
@@ -45,7 +54,7 @@ extension SALCollectionViewController {
         cell.backgroundColor = UIColor.blackColor()
         // Configure the cell
         textBoxes.append(cell as! TextBoxCell)
-        if(textBoxes.count >= 10) {
+        if(textBoxes.count >= currentStory.wordTypes.count) {
             setupCells()
         }
         print("cell made")
@@ -57,7 +66,7 @@ extension SALCollectionViewController : UICollectionViewDelegateFlowLayout {
     //1
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         print("cell size")
-        return CGSize(width: 100, height: 100)
+        return CGSize(width: 155, height: 50)
     }
     
     //3
