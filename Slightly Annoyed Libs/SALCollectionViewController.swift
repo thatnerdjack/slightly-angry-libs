@@ -27,11 +27,20 @@ class SALCollectionViewController: UICollectionViewController {
         }
     }
     
+    func sendInputs() {
+        for var i = 0; i < currentStory.wordTypes.count; i++ {
+            let TEXT_BOXES_CELL = textBoxes[i]
+            currentStory.wordInputs.append(TEXT_BOXES_CELL.textField.text!)
+        }
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        sendInputs()
         if(segue.identifier == "inputToStory") {
             let DVC = segue.destinationViewController as! StoryViewController
             DVC.currentStory = currentStory
             DVC.textBoxes = textBoxes
+            currentStory.loadStory()
         }
     }
 }

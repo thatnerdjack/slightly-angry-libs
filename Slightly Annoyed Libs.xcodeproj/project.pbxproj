@@ -17,6 +17,7 @@
 		C15DDC4F1BB9ABD600390BF7 /* Slightly_Annoyed_LibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DDC4E1BB9ABD600390BF7 /* Slightly_Annoyed_LibsTests.swift */; };
 		C15DDC5A1BB9ABD600390BF7 /* Slightly_Annoyed_LibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DDC591BB9ABD600390BF7 /* Slightly_Annoyed_LibsUITests.swift */; };
 		C1812C3A1BC82D5D002043FF /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1812C391BC82D5D002043FF /* Story.swift */; settings = {ASSET_TAGS = (); }; };
+		C18D830D1BD56E27002391E3 /* ScrewUps.txt in Resources */ = {isa = PBXBuildFile; fileRef = C18D830C1BD56E27002391E3 /* ScrewUps.txt */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C15DDC591BB9ABD600390BF7 /* Slightly_Annoyed_LibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slightly_Annoyed_LibsUITests.swift; sourceTree = "<group>"; };
 		C15DDC5B1BB9ABD600390BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1812C391BC82D5D002043FF /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		C18D830C1BD56E27002391E3 /* ScrewUps.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScrewUps.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				C15DDC401BB9ABD600390BF7 /* Assets.xcassets */,
 				C15DDC421BB9ABD600390BF7 /* LaunchScreen.storyboard */,
 				C15DDC451BB9ABD600390BF7 /* Info.plist */,
+				C18D830C1BD56E27002391E3 /* ScrewUps.txt */,
 			);
 			path = "Slightly Annoyed Libs";
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				C15DDC441BB9ABD600390BF7 /* LaunchScreen.storyboard in Resources */,
 				C15DDC411BB9ABD600390BF7 /* Assets.xcassets in Resources */,
+				C18D830D1BD56E27002391E3 /* ScrewUps.txt in Resources */,
 				C15DDC3F1BB9ABD600390BF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

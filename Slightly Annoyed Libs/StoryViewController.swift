@@ -11,9 +11,11 @@ import UIKit
 class StoryViewController: UIViewController {
     var textBoxes = [TextBoxCell]()
     var currentStory :Story?
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textView.text = currentStory?.story
     }
 
 }
