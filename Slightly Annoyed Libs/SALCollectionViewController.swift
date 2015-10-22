@@ -12,6 +12,7 @@ private let REUSE_IDENT = "textInputField"
 private let SECTION_INSERTS = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 private var textBoxes = [TextBoxCell]()
 var currentStory = RoodyStory()
+private var cellSetupRun = false
 
 class SALCollectionViewController: UICollectionViewController {
     
@@ -63,8 +64,9 @@ extension SALCollectionViewController {
         cell.backgroundColor = UIColor.blackColor()
         // Configure the cell
         textBoxes.append(cell as! TextBoxCell)
-        if(textBoxes.count >= currentStory.wordTypes.count) {
+        if((textBoxes.count >= currentStory.wordTypes.count) && !cellSetupRun) {
             setupCells()
+            cellSetupRun = true
         }
         print("cell made")
         return cell
