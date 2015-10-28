@@ -22,14 +22,17 @@ class SALCollectionViewController: UICollectionViewController {
     }
     
     func setupCells() {
+        print("setupcells: \(currentStory.wordTypes.count)")
         for var i = 0; i < currentStory.wordTypes.count; i++ {
             let CELL = textBoxes[i]
             CELL.textField.text = currentStory.wordTypes[i]
+            print(currentStory.wordTypes[i])
         }
     }
     
     func sendInputs() {
-        for var i = 0; i < currentStory.wordTypes.count; i++ {
+        currentStory.wordInputs = [String]()
+        for(var i = 0; i < currentStory.wordTypes.count; i++) {
             let TEXT_BOXES_CELL = textBoxes[i]
             currentStory.wordInputs.append(TEXT_BOXES_CELL.textField.text!)
         }
@@ -55,6 +58,7 @@ extension SALCollectionViewController {
     
     //2
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(currentStory.wordTypes.count)
         return currentStory.wordTypes.count
     }
     
@@ -64,7 +68,7 @@ extension SALCollectionViewController {
         cell.backgroundColor = UIColor.blackColor()
         // Configure the cell
         textBoxes.append(cell as! TextBoxCell)
-        if((textBoxes.count >= currentStory.wordTypes.count) && !cellSetupRun) {
+        if((textBoxes.count == currentStory.wordTypes.count) && !cellSetupRun) {
             setupCells()
             cellSetupRun = true
         }
