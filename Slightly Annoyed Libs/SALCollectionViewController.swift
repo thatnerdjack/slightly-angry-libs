@@ -24,9 +24,10 @@ class SALCollectionViewController: UICollectionViewController {
     func setupCells() {
         print("setupcells: \(currentStory.wordTypes.count)")
         for var i = 0; i < currentStory.wordTypes.count; i++ {
+            print("1 \(currentStory.wordTypes[i])")
             let CELL = textBoxes[i]
             CELL.textField.text = currentStory.wordTypes[i]
-            print(currentStory.wordTypes[i])
+            print("2 \(currentStory.wordTypes[i])")
         }
     }
     
