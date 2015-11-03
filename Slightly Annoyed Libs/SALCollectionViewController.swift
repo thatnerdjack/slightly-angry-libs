@@ -12,7 +12,8 @@ private let REUSE_IDENT = "textInputField"
 private let SECTION_INSERTS = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 private var textBoxes = [TextBoxCell]()
 var currentStory = RoodyStory()
-private var cellSetupRun = false
+//private var cellSetupRun = false
+private var cellSetupRounds = 0
 
 class SALCollectionViewController: UICollectionViewController {
     
@@ -21,15 +22,12 @@ class SALCollectionViewController: UICollectionViewController {
         print("view did load")
     }
     
-    func setupCells() {
-        print("setupcells: \(currentStory.wordTypes.count)")
-        for var i = 0; i < currentStory.wordTypes.count; i++ {
-            print("1 \(currentStory.wordTypes[i])")
-            let CELL = textBoxes[i]
-            CELL.textField.text = currentStory.wordTypes[i]
-            print("2 \(currentStory.wordTypes[i])")
-        }
-    }
+//    func setupCells() {
+//        for var i = 0; i < currentStory.wordTypes.count; i++ {
+//            let CELL = textBoxes[i]
+//            CELL.textField.text = currentStory.wordTypes[i]
+//        }
+//    }
     
     func sendInputs() {
         currentStory.wordInputs = [String]()
@@ -65,15 +63,20 @@ extension SALCollectionViewController {
     
     //3
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(REUSE_IDENT, forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(REUSE_IDENT, forIndexPath: indexPath) as! TextBoxCell
         cell.backgroundColor = UIColor.blackColor()
         // Configure the cell
-        textBoxes.append(cell as! TextBoxCell)
-        if((textBoxes.count == currentStory.wordTypes.count) && !cellSetupRun) {
-            setupCells()
-            cellSetupRun = true
+        cell.textField.text = currentStory.wordTypes[cellSetupRounds]
+//        textBoxes.append(cell)
+//        if((textBoxes.count == currentStory.wordTypes.count) && !cellSetupRun) {
+//            setupCells()
+//            cellSetupRun = true
+//        }
+        if(cellSetupRounds > 9) {
+            cellSetupRounds = 0
+        } else {
+            cellSetupRounds++
         }
-        print("cell made")
         return cell
     }
 }
